@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: mscartoes
+  datasource:
+    url: jdbc:mysql://${MYSQL_SERVER}:3306/mscartoes?useTimezone=true&serverTimezone=UTC
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  rabbitmq:
+    host: ${RABBITMQ_SERVER}
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port : 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-user:12345678@${EUREKA_SERVER}:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+mq:
+  queues:
+    emissao-cartoes: emissao-cartoes
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  file:
+    name: ./logs/log-file.log
