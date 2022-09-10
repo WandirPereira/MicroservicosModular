@@ -12,7 +12,9 @@
 * Container KeyCloak:
     * docker run --name keycloak_ac -p 8084:8080 -e KEYCLOAK_ADMIN_PASSWORD=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:18.0.0 start dev
     
---- *** --- 
+--- 
+---
+---
 ***CRIANDO CONTAINERS PARA CADA SERVIÇO:***
 
   * Criando a rede: 
