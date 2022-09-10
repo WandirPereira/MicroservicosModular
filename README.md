@@ -2,8 +2,8 @@
 
 **EXECUTANDO TODOS OS SERVIÇOS EM LOCALHOST:**
 
-*Container banco de dados:
-   +docker run --name mysql_ac -d -p 3306:3306 -v /c/mysql_datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345 mysql:latest
+* Container banco de dados:
+   * docker run --name mysql_ac -d -p 3306:3306 -v /c/mysql_datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345 mysql:latest
 
 >Container Rabbitmq:
   >>docker rum --name rabbitma_ac -p 5672:5672 -p 15672:15672 rabbit:3.10-management
