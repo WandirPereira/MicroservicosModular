@@ -26,5 +26,4 @@ public class MscloudgatewayApplication {
 				.route(r -> r.path("/avaliacoes-credito/**").uri("lb://msavaliadorcredito"))
 				.build();
 	}
-
 }

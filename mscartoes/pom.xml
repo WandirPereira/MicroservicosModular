@@ -10,7 +10,6 @@
 		<relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.github.wandirpereira</groupId>
 	<artifactId>mscartoes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mscartoes</name>

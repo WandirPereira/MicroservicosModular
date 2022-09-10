@@ -1,124 +1,39 @@
-2022-09-07 15:37:43.149  INFO 22648 --- [restartedMain] c.g.w.m.MsavaliadorcreditoApplication    : Starting MsavaliadorcreditoApplication using Java 11.0.15 on DESKTOP-1GMQS60 with PID 22648 (C:\Users\wandi\Documents\2022-Curso-MicroserviÃ§os_DouglasSouza\Microservicos_SpringCloud\msavaliadorcredito\target\classes started by wandi in C:\Users\wandi\Documents\2022-Curso-MicroserviÃ§os_DouglasSouza\Microservicos_SpringCloud\msavaliadorcredito)
-2022-09-07 15:37:43.159  INFO 22648 --- [restartedMain] c.g.w.m.MsavaliadorcreditoApplication    : No active profile set, falling back to 1 default profile: "default"
-2022-09-07 15:37:43.250  INFO 22648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-09-07 15:37:43.251  INFO 22648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-09-07 15:37:45.079  INFO 22648 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=11cac046-fe41-3069-9ca6-276a69d2e3ac
-2022-09-07 15:37:46.309  INFO 22648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-09-07 15:37:46.324  INFO 22648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-07 15:37:46.324  INFO 22648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-09-07 15:37:46.472  INFO 22648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-07 15:37:46.472  INFO 22648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3219 ms
-2022-09-07 15:37:47.351  WARN 22648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-09-07 15:37:47.487  INFO 22648 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'msclientes' URL not provided. Will try picking an instance via load-balancing.
-2022-09-07 15:37:47.665  INFO 22648 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'mscartoes' URL not provided. Will try picking an instance via load-balancing.
-2022-09-07 15:37:53.280  INFO 22648 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-09-07 15:37:55.275  INFO 22648 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-09-07 15:37:55.288  INFO 22648 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2022-09-07 15:37:55.371  WARN 22648 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2022-09-07 15:37:55.386  INFO 22648 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2022-09-07 15:37:55.478  INFO 22648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53151 (http) with context path ''
-2022-09-07 15:37:55.479  INFO 22648 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 53151
-2022-09-07 15:37:55.487  INFO 22648 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-09-07 15:37:55.609  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-09-07 15:37:55.617  INFO 22648 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 15:37:55.651  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-09-07 15:37:55.651  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-09-07 15:37:55.651  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-09-07 15:37:55.651  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-09-07 15:37:55.651  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-09-07 15:37:55.651  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-09-07 15:37:55.651  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-09-07 15:37:56.132  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-09-07 15:37:56.135  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-09-07 15:37:56.138  INFO 22648 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-09-07 15:37:56.145  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662575876144 with initial instances count: 2
-2022-09-07 15:37:56.147  INFO 22648 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSAVALIADORCREDITO with eureka with status UP
-2022-09-07 15:37:56.148  INFO 22648 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662575876148, current=UP, previous=STARTING]
-2022-09-07 15:37:56.150  INFO 22648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSAVALIADORCREDITO/msavaliadorcredito:c055210700e7381173fc73b2121c02a0: registering service...
-2022-09-07 15:37:56.295  INFO 22648 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSAVALIADORCREDITO/msavaliadorcredito:c055210700e7381173fc73b2121c02a0 - registration status: 204
-2022-09-07 15:37:57.836  INFO 22648 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2022-09-07 15:37:57.867  INFO 22648 --- [restartedMain] c.g.w.m.MsavaliadorcreditoApplication    : Started MsavaliadorcreditoApplication in 17.21 seconds (JVM running for 19.022)
-2022-09-07 15:42:55.685  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 15:47:55.694  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 15:52:55.697  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 15:57:03.214  INFO 22648 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-07 15:57:03.215  INFO 22648 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-07 15:57:03.216  INFO 22648 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-09-07 15:57:46.381  INFO 22648 --- [http-nio-auto-1-exec-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2022-09-07 15:57:46.442  INFO 22648 --- [http-nio-auto-1-exec-8] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#187f29f4:0/SimpleConnection@7ac37742 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 51861]
-2022-09-07 15:57:55.701  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:02:55.706  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:07:55.710  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:12:55.722  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:17:55.726  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:22:55.741  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:27:55.743  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:32:55.753  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:37:55.759  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:42:55.765  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:47:55.770  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:52:55.783  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 16:57:55.795  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:02:55.800  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:07:55.805  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:12:55.821  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:17:55.835  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:22:55.838  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:27:55.855  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:32:55.867  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:37:55.885  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:42:55.900  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:47:55.907  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:52:55.914  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 17:57:55.920  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:02:55.933  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:07:55.940  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:12:55.942  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:17:55.949  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:22:55.961  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:27:55.964  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:32:55.979  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:37:55.991  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:42:56.006  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:47:56.013  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:52:56.020  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 18:57:56.032  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:02:56.043  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:07:56.048  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:12:56.060  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:17:56.073  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:22:56.080  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:27:56.089  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:32:56.099  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:37:56.103  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:42:56.106  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:47:56.121  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:52:56.134  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 19:57:56.148  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:02:56.159  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:07:56.170  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:12:56.181  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:17:56.188  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:22:56.202  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:27:56.206  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:32:56.210  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:37:56.217  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:42:56.225  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:47:56.235  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:52:56.249  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 20:57:56.262  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:02:56.274  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:07:56.278  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:12:56.289  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:17:56.298  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:22:56.300  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:27:56.303  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:32:56.306  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:37:56.322  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:42:56.333  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:47:56.339  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:52:56.364  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 21:57:56.369  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 22:02:56.377  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 22:07:56.385  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-09-07 22:12:56.399  INFO 22648 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-10 10:31:36.089  INFO 13316 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : Starting MsavaliadorcreditoApplicationTests using Java 11.0.15 on DESKTOP-1GMQS60 with PID 13316 (started by wandi in C:\Users\wandi\Documents\2022-Curso-Microserviços_DouglasSouza\MicroservicosCartoes\msavaliadorcredito)
+2022-09-10 10:31:36.121  INFO 13316 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2022-09-10 10:31:40.965  INFO 13316 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fde59fc3-774e-3972-9bb7-111450c77f89
+2022-09-10 10:31:43.901  INFO 13316 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'msclientes' URL not provided. Will try picking an instance via load-balancing.
+2022-09-10 10:31:44.241  INFO 13316 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'mscartoes' URL not provided. Will try picking an instance via load-balancing.
+2022-09-10 10:31:53.495  INFO 13316 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-10 10:31:55.966  INFO 13316 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-10 10:31:55.993  INFO 13316 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-10 10:31:56.171  WARN 13316 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-10 10:31:56.194  INFO 13316 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-09-10 10:31:56.333  INFO 13316 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : Started MsavaliadorcreditoApplicationTests in 23.905 seconds (JVM running for 26.773)
+2022-09-10 10:31:57.272  INFO 13316 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-10 10:31:57.279  INFO 13316 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSAVALIADORCREDITO with eureka with status DOWN
+2022-09-10 10:40:32.388  INFO 19268 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : Starting MsavaliadorcreditoApplicationTests using Java 11.0.15 on DESKTOP-1GMQS60 with PID 19268 (started by wandi in C:\Users\wandi\Documents\2022-Curso-Microserviços_DouglasSouza\MicroservicosCartoes\msavaliadorcredito)
+2022-09-10 10:40:32.391  INFO 19268 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2022-09-10 10:40:34.484  INFO 19268 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fde59fc3-774e-3972-9bb7-111450c77f89
+2022-09-10 10:40:36.154  INFO 19268 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'msclientes' URL not provided. Will try picking an instance via load-balancing.
+2022-09-10 10:40:36.583  INFO 19268 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'mscartoes' URL not provided. Will try picking an instance via load-balancing.
+2022-09-10 10:40:45.694  INFO 19268 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-10 10:40:48.379  INFO 19268 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-10 10:40:48.433  INFO 19268 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-10 10:40:48.611  WARN 19268 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-10 10:40:48.643  INFO 19268 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-09-10 10:40:48.773  INFO 19268 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : Started MsavaliadorcreditoApplicationTests in 19.741 seconds (JVM running for 22.316)
+2022-09-10 10:40:49.454  INFO 19268 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-10 10:40:49.460  INFO 19268 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSAVALIADORCREDITO with eureka with status DOWN
+2022-09-10 10:47:34.778  INFO 10668 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : Starting MsavaliadorcreditoApplicationTests using Java 11.0.15 on DESKTOP-1GMQS60 with PID 10668 (started by wandi in C:\Users\wandi\Documents\2022-Curso-Microserviços_DouglasSouza\MicroservicosCartoes\msavaliadorcredito)
+2022-09-10 10:47:34.782  INFO 10668 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2022-09-10 10:47:39.328  INFO 10668 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fde59fc3-774e-3972-9bb7-111450c77f89
+2022-09-10 10:47:41.470  INFO 10668 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'msclientes' URL not provided. Will try picking an instance via load-balancing.
+2022-09-10 10:47:41.851  INFO 10668 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'mscartoes' URL not provided. Will try picking an instance via load-balancing.
+2022-09-10 10:47:51.384  INFO 10668 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-10 10:47:53.830  INFO 10668 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-10 10:47:53.853  INFO 10668 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-10 10:47:54.009  WARN 10668 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-10 10:47:54.036  INFO 10668 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-09-10 10:47:54.165  INFO 10668 --- [main] g.w.m.MsavaliadorcreditoApplicationTests : Started MsavaliadorcreditoApplicationTests in 23.379 seconds (JVM running for 26.299)
+2022-09-10 10:47:54.927  INFO 10668 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-10 10:47:54.932  INFO 10668 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSAVALIADORCREDITO with eureka with status DOWN
