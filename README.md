@@ -36,15 +36,15 @@
     * docker build --tag wandir/mscloudgateway .
     * docker run --name mscloudgateway_ac --network ac-network -e EUREKA_SERVER=eureka_ac  -e KEYCLOAK_SERVER=keycloak_ac -d wandir/mscloudgateway  
   
-  * Container msclientes
+  * Container msclientes:
     * docker build --tag wandir/msclientes_ac .
     * docker run --name msclientes_ac --network ac-network -e EUREKA_SERVER=eureka_ac  -e MYSQL_SERVER=mysql_ac -d wandir/msclientes_ac   
 
-  * Container mscartoes
+  * Container mscartoes:
     * docker build --tag wandir/mscartoes_ac .
     * docker run --name mscartoes_ac --network ac-network -e EUREKA_SERVER=eureka_ac  -e MYSQL_SERVER=mysql_ac -e RABBITMQ_SERVER=rabbitmq_ac -d wandir/mscartoes_ac 
 
-  * Container msavaliadorcredito
+  * Container msavaliadorcredito:
     * docker build --tag wandir/msavaliadorcredito_ac .
     * docker run --name msavaliadorcredito_ac --network ac-network -e EUREKA_SERVER=eureka_ac -e RABBITMQ_SERVER=rabbitmq_ac -d wandir/msavaliadorcredito_ac    
   
