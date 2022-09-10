@@ -1,4 +1,4 @@
-### Microserviços com Spring Boot, Spring Cloud, Eureka, KeyCloak, Rabbitmq e Mysql
+### Microserviços com Spring Boot, Spring Cloud, Eureka, KeyCloak, Rabbitmq, Mysql e Docker
 ---
 
 ***EXECUTANDO TODOS OS SERVIÇOS EM LOCALHOST:***
