@@ -7,7 +7,7 @@
    * docker run --name mysql_ac -d -p 3306:3306 -v /c/mysql_datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=12345 mysql:latest
 
 * Container Rabbitmq:
-    * docker rum --name rabbitma_ac -p 5672:5672 -p 15672:15672 rabbit:3.10-management
+    * docker rum --name rabbitmq_ac -p 5672:5672 -p 15672:15672 rabbitmq:3.10-management
     * configurar fila "emissao-cartoes"
   
 * Container KeyCloak:
@@ -24,7 +24,7 @@
     * docker run --name mysql_ac -d -p 3306:3306 -v /c/mysql_datadir:/var/lib/mysql --network ac-network -e MYSQL_ROOT_PASSWORD=12345 mysql:latest
 
   * Container Rabbitmq:
-    * docker run --name rabbitmq_ac -p 5672:5672 -p 15672:15672  --network ac-network rabbit:3.10-management
+    * docker run --name rabbitmq_ac -p 5672:5672 -p 15672:15672  --network ac-network rabbitmq:3.10-management
     * Configurar fila emissao-cartoes
   
   * Container KeyCloak:
