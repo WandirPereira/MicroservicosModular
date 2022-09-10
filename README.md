@@ -32,7 +32,7 @@ CRIANDO CONTAINERS PARA CADA SERVIÇO:
     >>docker run --name eureka_ac -p 8761:8761 --network ac-network wandir/eureka_ac
     
   >Container mscloudgateway:
-    >>docker build --tag wandir/mscloudgateway
+    >>docker build --tag wandir/mscloudgateway .
     >>docker run --name mscloudgateway_ac --network ac-network -e EUREKA_SERVER=eureka_ac  -e KEYCLOAK_SERVER=keycloak_ac -d wandir/mscloudgateway  
   
   
